@@ -1,0 +1,18 @@
+<div class="section">
+    <div class="tile" *ngFor="let user of users">
+        <nav class="level">
+            <p class="level-item has-text-centered">
+                <span >{{user.firstName}}</span>
+            </p>
+            <p class="level-item has-text-centered">
+                <span>{{user.lastName}}</span>
+            </p>
+            <p class="level-item has-text-centered">
+                <a routerLink="/users/{{user.id}}">{{user.emailAddress}}</a>
+            </p>
+            <p class="level-item has-text-centered">
+                <span>{{user.age}}</span>
+            </p>
+        </nav>
+    </div>
+</div>
